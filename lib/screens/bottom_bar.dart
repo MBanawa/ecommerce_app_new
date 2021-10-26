@@ -58,6 +58,8 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
     return Scaffold(
       body: _pages[_selectedIndex]['page'],
       bottomNavigationBar: BottomAppBar(
+        notchMargin: 7,
+        clipBehavior: Clip.antiAlias,
         shape: CircularNotchedRectangle(),
         child: BottomNavigationBar(
           onTap: _selectedPage,
