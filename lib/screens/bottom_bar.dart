@@ -1,9 +1,14 @@
+import 'package:ecommerce_app/consts/my_icons.dart';
 import 'package:ecommerce_app/screens/cart.dart';
 import 'package:ecommerce_app/screens/feeds.dart';
 import 'package:ecommerce_app/screens/home.dart';
 import 'package:ecommerce_app/screens/search.dart';
 import 'package:ecommerce_app/screens/user_info.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttericon/elusive_icons.dart';
+import 'package:fluttericon/entypo_icons.dart';
+import 'package:fluttericon/font_awesome5_icons.dart';
+import 'package:fluttericon/font_awesome_icons.dart';
 
 class BottomBarScreen extends StatefulWidget {
   const BottomBarScreen({Key? key}) : super(key: key);
@@ -69,12 +74,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           currentIndex: _selectedIndex,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(MyAppIcons.home),
               tooltip: 'Home',
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.rss_feed),
+              icon: Icon(MyAppIcons.rss),
               tooltip: 'Feeds',
               label: 'Feeds',
             ),
@@ -85,12 +90,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
               label: 'Search',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_bag),
+              icon: Icon(MyAppIcons.cart),
               tooltip: 'Cart',
               label: 'Cart',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person),
+              icon: Icon(MyAppIcons.user),
               tooltip: 'User',
               label: 'User',
             ),
@@ -103,7 +108,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         backgroundColor: Colors.purple,
         tooltip: 'Search',
         elevation: 5,
-        child: Icon(Icons.search),
+        child: Icon(MyAppIcons.search),
         onPressed: () {
           setState(() {
             _selectedIndex = 2;
