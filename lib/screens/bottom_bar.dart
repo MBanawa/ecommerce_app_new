@@ -28,7 +28,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
 
   var _pages;
 
-  int _selectedIndex = 0;
+  int _selectedIndex = 4;
 
   @override
   void initState() {
